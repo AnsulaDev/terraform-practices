@@ -1,0 +1,14 @@
+# Format the Terraform code according to standard conventions
+terraform fmt
+
+# Validate the Terraform configuration files for syntax and logical errors
+terraform validate
+
+# Initialize the Terraform configuration, downloading providers and setting up the backend
+terraform init
+
+# Create an execution plan, showing what actions Terraform will perform
+terraform plan
+
+# Apply the changes required to reach the desired state of the configuration
+terraform apply

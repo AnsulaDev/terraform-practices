@@ -12,3 +12,7 @@ terraform plan
 
 # Apply the changes required to reach the desired state of the configuration
 terraform apply
+
+
+# To destroy resources
+terraform destroy

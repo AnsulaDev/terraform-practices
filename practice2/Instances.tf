@@ -11,3 +11,10 @@ resource "aws_instance" "web" {
         Project = "Dove"  # Tag for project categorization
     }
 }
+
+
+# Define a resource to manage the state of an AWS EC2 instance
+resource "aws_ec2_instance_state" "web-state" {
+    instance_id = aws_instance.web.id  # Reference to the EC2 instance ID
+    state       = "running"  # Desired state of the instance (e.g., running)
+}

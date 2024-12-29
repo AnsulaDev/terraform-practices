@@ -1,7 +1,3 @@
-# main.tf
-provider "aws" {
-    region = var.region # Specify your AWS region
-}
 
 resource "aws_s3_bucket" "kopsansula" {
     bucket = "kopsansula"  # The name of the S3 bucket

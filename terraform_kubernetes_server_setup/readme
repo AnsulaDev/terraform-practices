@@ -1,0 +1,4 @@
+Initial  Kops for K8s Setup:
+1. Set up a new instance
+2. Create Route 53
+3. Create an S3 bucket

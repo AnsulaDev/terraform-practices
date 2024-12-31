@@ -3,7 +3,7 @@ resource "aws_instance" "kops" {
     ami = var.amiID[var.region]  # Use the AMI ID fetched based on region from variable
     instance_type = "t3.micro"  # Specify the instance type
     key_name = "kops-key"  # Name of the key pair for SSH access
-    vpc_security_group_ids = [aws_security_group.dove-sg.id]  # Attach the instance to the specified security group
+    vpc_security_group_ids = [aws_security_group.kops-sg.id]  # Attach the instance to the specified security group
     availability_zone = var.zone  # Calling availability zone value from variable
 
     tags = {
